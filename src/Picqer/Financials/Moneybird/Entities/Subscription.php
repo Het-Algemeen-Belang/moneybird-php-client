@@ -38,6 +38,9 @@ class Subscription extends Model
         'prices_are_incl_tax',
         'subscription_prices_are_incl_tax',
         'subscription_products',
+        'administration_id',
+        'cancelled_at',
+        'recurring_sales_invoice_id',
     ];
 
     /**
