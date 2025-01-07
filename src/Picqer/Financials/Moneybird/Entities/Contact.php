@@ -124,6 +124,12 @@ class Contact extends Model
         );
     }
 
+    public function getPaymentsMandateURL(): array {
+        return $this->connection()->get(
+            $this->getEndpoint() . '/' . $this->id . '/moneybird_payments_mandate/url'
+        );
+    }
+
     public function addContactPerson(array $attributes): ContactPeople
     {
         $attributes['contact_id'] = $this->id;
